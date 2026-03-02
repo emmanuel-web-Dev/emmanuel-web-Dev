@@ -82,11 +82,14 @@
         }
 
         .profile-picture{
-            width: 300px;
-            height: 300px;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            aspect-ratio: 1 / 1;
             object-fit: cover;
             border-radius: 50%;
-            margin-right: 50px;
+            margin-right: 0px;
+            margin-bottom: 20px;
         }
 
         .profile{
@@ -176,17 +179,10 @@
             height: auto;
 
         }
-        @media (max-width:800px) {
+        @media (max-width:767px) {
             
 
-            .profile-picture{
-                max-width: 100%;
-                height: auto;
-                object-fit: cover;
-                border-radius: 50%;
-                margin-right: 30px;
-            }
-
+            
             
         .profile{
             display: flex;
@@ -205,6 +201,13 @@
             
         }
         }
+
+        @media (min-width: 768px) {
+            .profile-picture {
+            margin-right: 50px;
+            margin-bottom: 0;
+        }
+}
         
     </style>
 </head>
@@ -278,5 +281,6 @@
 </body>
 
 </html>
+
 
 
