@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Card</title>
+    <style>
+        .header{
+            background: linear-gradient(135deg, #1e1e1e 0%, #2c3e50 100%);
+            height: 50px;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            padding-top: 10px;
+            
+            
+            
+        }
+        .left-section{
+            display: flex;
+            flex-direction: row;
+            margin-right: 20px;
+            margin-bottom: 12px;
+            
+           
+        }
+
+        button{
+            margin-left: 20px;
+            
+            padding: 10px 15px;
+            border: 1px solid black;
+            background-color: #f5f5f5;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+            
+        }
+
+        button:hover{
+            background-color: black;
+            color:#f5f5f5;;
+        }
+
+        .right-section{
+            margin-bottom: 20px;
+
+        }
+        body{
+            height: 3000px;
+            margin-top: 200px;
+            background: linear-gradient(135deg, #1e1e1e 0%, #2c3e50 100%);
+            background-attachment: fixed;
+            
+        }
+
+        h1{
+            color: wheat;
+            font-size: 40px;
+            
+        }
+
+        p{
+            color: #e0e0e0;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            
+        }
+
+        .profile-picture{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 50px;
+        }
+
+        .profile{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+        }
+
+        .description{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bio{
+            width: 500px;
+        }
+
+        img{
+            width: 100px;
+            height: 100px;
+        }
+
+        .fb, .x, .insta{
+            width: 36px;
+            height: 36px;
+            object-fit: cover;
+            margin-right: 10px;
+            filter: invert(1);
+            
+        }
+
+        .footer{
+            
+            padding-top: 24px;
+            padding-bottom: 12px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(40, 40, 40);
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: white;
+            flex-direction: column;
+            
+        }
+
+        .skills-sections{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            margin-top: 100px;
+        }
+
+        .skill{
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: rgb(0, 113, 235);
+        }
+
+     
+        .tec{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left-section">
+            <button>Accueil</button>
+            <button>A propos</button>
+        </div>
+        
+    </div>
+    
+    
+    <div class="container">
+
+        <div class="profile">
+            <img class="profile-picture" src="images/Higuruma.jpeg" alt="mon profile">
+
+            <div class="description">
+                <h1>
+                    Emmanuel Kankoe
+                 </h1>
+        
+                <p class="bio">
+                     Étudiant en première année de mathématiques à la Faculté des Sciences de l’Université de Lomé, passionné par la logique, l’analyse et la résolution de problèmes, je développe également mes compétences en programmation et en développement web.
+                </p>
+
+            </div>
+
+        </div>
+        <div class="skills-sections">
+            <div class="skill">Mes Compétences</div>
+        <div class="tec">
+            <img  class="tech"  src="images/html.png" alt="">
+            <img  class="tech"  src="images/css-3.png" alt="">
+            <img  class="tech" src="images/python.png" alt="">
+        </div>
+
+        </div>
+        
+        
+
+        
+    </div>
+    <div class="footer">
+       
+        <div class="right-section">
+            <a href="https://www.facebook.com/profile.php?id=61561147852991" target="_blank">
+                <img class="fb" src="images/facebook.png">
+            </a>
+            <a href="https://www.instagram.com/ekanemma228/" target="_blank">
+                <img class="insta" src="images/instagram.png" alt="">
+            </a>
+            <a href="https://x.com/Emmanuel1143842" target="_blank">
+                <img class="x" src="images/twitter.png" alt="">
+            </a>
+            
+        </div>
+
+         © 2026 Emmanuel Kankoe - Tous droits réservés.
+    </div>
+</body>
+</html>
