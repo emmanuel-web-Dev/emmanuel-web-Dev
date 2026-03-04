@@ -1,0 +1,62 @@
+body{
+    font-family: "Nunito", sans-serif;
+    
+}
+
+.domaine{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+.domaine:hover{
+    transform: translateY(-5px);
+}
+.level{
+    position: absolute;
+    bottom: 0;
+    background-color: green;
+    left: 0;
+    right:0;
+    text-align: center;
+    padding: 10px;    
+    color: white;
+    
+}
+
+
+.logo{
+    width: 100px;
+    height: auto;
+}
+@media (max-width:767px) {
+    .domaine{
+        margin-bottom: 20px;
+        display: flex;
+    
+    
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    }
+}
+@media (min-width:768px) {
+    .domaines{
+    display: flex;
+    
+    
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    padding: 20px;
+    
+}
+}
