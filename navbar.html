@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="carte.css">
+    <link rel="stylesheet" href="Dashboard/dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="formulaire de question/boite_a_question.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="left-section">
+            <img class="sigma" src="images/sigma.png" >
+        </div>
+        <div class="right-sectiom">
+            <ul>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#maths">Mes Antisèches</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="profil">
+        <div class="container-profil">
+        <div class="photo" >
+            <img class="photo-de-profil" src="images/Higuruma.jpeg">
+        </div>
+        <div class="presentation">
+
+            <h1>Emmanuel</h1>
+            <p>Étudiant en Mathématiques</p>
+
+            <div class="boite-reseau-sociaux">
+                <div class="reseau-sociaux" >
+                    <img class="image-reseau-social" src="images/github.png" alt="">
+                    Mon Github
+                </div>
+                <div class="reseau-sociaux">
+                    <img class="image-reseau-social"  src="images/facebook.png" alt="">
+                    Facebook
+                </div>
+                <div class="reseau-sociaux">
+                    <img class="image-reseau-social"  src="images/instagram.png" alt="">
+                    Instagram
+                </div>
+                <div class="reseau-sociaux">
+                    <img class="image-reseau-social"  src="images/twitter.png" alt="">
+                    Twitter
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="maths">
+        <h1>
+            Mes Antisèches de Maths
+        </h1>
+
+        <section class="domaines">
+            <article class="domaine">
+            <img class="logo" src="images/open-book.png" alt="">
+            <h2>Algèbre</h2>
+            <div class="level">
+                    Niveau L1
+                </div>
+            </article>
+            <article class="domaine">
+                <img class="logo" src="images/open-book.png" >
+            <h2>Analyse</h2>
+            <div class="level">
+                    Niveau L1
+                </div>
+            </article>
+            <article class="domaine">
+                <img class="logo" src="images/open-book.png" >
+                <h2>Probabilités</h2>
+                <div class="level">
+                    Niveau L1
+                </div>
+            </article>
+        </section>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+        <h2 class="quest">Pose-moi une question</h2>
+        <form class="formulaire">
+            <label for="nom">Nom:</label>
+            <input type="text" placeholder="ex: John Doe" required id="nom">
+            <label for="email">Email:</label>
+            <input type="email" placeholder="example@gmail.com" required>
+            <label for="select">Matière:</label>
+            <select name="matiere" id="select">
+                <option value="">Aucun</option>
+                <option value="">Algèbre</option>
+                <option value="">Analyse</option>
+                <option value="">Probabilités</option>
+            </select>
+            <textarea name="problem" id="" placeholder="Ta question"></textarea>
+            <button type="submit">Envoyer mon problème </button>
+        </form>
+    </div>
+    </section>
+</body>
+</html>

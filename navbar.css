@@ -1,0 +1,46 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: rgb(65, 133, 221);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+
+    padding:5px 20px 5px 20px;
+    
+}
+
+ul{
+    
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+.sigma{
+    width: 36px;
+    height: 36px;
+}
+.right-section{
+    margin-right: 50px;
+}
